@@ -184,6 +184,7 @@ private fun DessertClickerApp(
     onDessertClicked: () -> Unit,
     modifier: Modifier = Modifier
 ) {
+
     Scaffold(
         topBar = {
             val intentContext = LocalContext.current
@@ -197,7 +198,7 @@ private fun DessertClickerApp(
             dessertsSold = uiState.dessertsSold,
             dessertImageId = uiState.currentDessertImage,
             onDessertClicked = onDessertClicked,
-            modifier = Modifier.padding(contentPadding)
+            modifier = modifier.padding(contentPadding)
         )
     }
 }
